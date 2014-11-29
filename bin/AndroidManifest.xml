@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ejvindh.tododiary"
+    android:versionCode="1"
+    android:versionName="1.0" xmlns:tools="http://schemas.android.com/tools" tools:ignore="OldTargetApi">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" tools:ignore="OldTargetApi"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ejvindh.tododiary.TodoDiary"
+            android:launchMode="singleTop"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="standard" >
+            <intent-filter>
+
+                <!-- Change this to be db- followed by your app key -->
+                <data android:scheme="db-017dztsk3tr8op9" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ejvindh.tododiary.JumbleActivity"
+            android:label="@string/title_activity_jumble" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ejvindh.dbtodo.DBTodo" />
+        </activity>
+        <activity
+            android:name="com.ejvindh.tododiary.BrowseFiles"
+            android:label="@string/title_activity_browse_files" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ejvindh.dbtodo.DBTodo" />
+        </activity>
+        <activity
+            android:name="com.ejvindh.tododiary.Raw_db_Activity"
+            android:label="@string/title_activity_raw_db" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ejvindh.dbtodo.DBTodo" />
+        </activity>
+        
+    </application>
+
+</manifest>

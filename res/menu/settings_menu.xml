@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/goto_jumble" android:title="@string/Jumble"></item>
+    <item android:id="@+id/raw_db" android:title="@string/raw_db"></item>
+    <item android:id="@+id/keeplocalcopy" android:visible="true" android:checkable="true" android:enabled="true" android:title="@string/keeplocalcopy"></item>
+    <item android:id="@+id/find_dict" android:title="@string/choose_dict"></item>
+    <item android:id="@+id/enabletodo" android:visible="true" android:checkable="true" android:enabled="true" android:title="@string/enabletodo"></item>
+    
+
+</menu>

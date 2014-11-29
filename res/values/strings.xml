@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TodoDiary</string>
+    <string name="action_settings">Settings</string>
+    <string name="Jumble">Jumble</string>
+    <string name="raw_db">Raw DB View</string>
+    <string name="quit">Quit</string>
+    <string name="save">Save</string>
+    <string name="mark_done">Mark Done</string>
+    <string name="done">Done</string>
+    <string name="allset">All Set</string>
+    <string name="prev_todo">Prev Todo</string>
+    <string name="next_todo">Next Todo</string>
+    <string name="leftovers">Leftovers</string>
+    <string name="entries">entries</string>
+    <string name="title_activity_jumble">The Jumble</string>
+    <string name="title_activity_raw_db">Raw DB View</string>
+    <string name="failed_db_load">Networktrouble or Dropbox account not properly authenticated</string>
+    <string name="upload_error_heading">Upload Error!</string>
+    <string name="upload_error_intro">Changes have not been uploadet to Dropbox. 
+        Still want to exit application?</string>
+    <string-array name="upload_errors">
+        <item>Upload success</item>
+        <item>The app was not authenticated properly</item>
+        <item>The file is too big to upload</item>
+        <item>Upload canceled by user</item>
+		<item>401_UNAUTHORIZED</item>
+		<item>403_FORBIDDEN</item>
+		<item>Path not found</item>
+		<item>User is over quota</item>
+		<item>Unknown</item>
+		<item>Network error.</item>
+		<item>Dropbox error.</item>
+		<item>Unknown error.</item>
+		<item>File Not Found</item>
+    </string-array>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="keeplocalcopy">Keep local copy</string>
+    <string name="choose_dict">--> Choose folder</string>
+    <string name="enabletodo">Enable todo</string>
+	<string name="choose_button">Select</string>
+    <string name="no_data">No Data</string>
+    <string name="title_activity_browse_files">Select folder</string>
+    <string name="goto_today">Today</string>
+    <string name="saving_closing">Saving and closing</string>
+</resources>
