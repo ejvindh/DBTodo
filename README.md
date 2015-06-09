@@ -10,8 +10,6 @@ They are written in Java8 and can thus (if Java8 is installed) be run directly i
 
 Attention: Be carefull with the Raw-DB-View. Don't mess with the lines containing the date-indications. If they do not have the right format, TodoDiary will not be able to show and save content in the right places. And they may also risk becomming invisible in the "Single-Day-View".
 	  
-Theoretically you ought to be able to install the app on your Android device without Dropbox installed. It has, however, not been possible for me to make the Web-authentication work. You will thus propably actually find it difficult to get this app working well without Dropbox installed. As soon as the app is properly installed you can then uninstall the Dropbox app if desired.
-
 Notice: A similar project can be found here: http://todotxt.com/
 Several Android-apps are created around this project. I'm not affiliated with that project, and my project has been developed independently.
 
@@ -25,3 +23,8 @@ https://github.com/ejvindh/DBTodo/releases
 ---------------
 v1.0: December 2014
 - First public release
+
+v1.1: June 2015
+- Bugfix: New authentications now work again
+- Authentication now works without having Dropbox installed (using the Web-interface instead).
+(however, beware: If you have on other systems typed content in existing databases, conten in the "Today"-entry will be wiped...sorry for now I'm too lazy to fix this bug...).

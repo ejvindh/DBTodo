@@ -31,7 +31,7 @@
         <activity
             android:name="com.dropbox.client2.android.AuthActivity"
             android:configChanges="orientation|keyboard"
-            android:launchMode="standard" >
+            android:launchMode="singleTask" >
             <intent-filter>
 
                 <!-- Change this to be db- followed by your app key -->
