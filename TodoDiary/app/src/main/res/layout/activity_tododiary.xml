@@ -1,0 +1,85 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="top|start"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:textSize="12sp" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:text="@string/save"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/goto_today"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:text="@string/goto_today"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/markdone_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/prevtodo_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:text="@string/prev_todo"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/nexttodo_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:text="@string/next_todo"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/todocount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/emptyTodoCounter"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:mcv_firstDayOfWeek="monday"
+            app:mcv_selectionColor="#00F"
+            app:mcv_showOtherDates="all" />
+    </TableRow>
+
+</TableLayout>
