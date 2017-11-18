@@ -233,6 +233,7 @@ public class TodoDiary extends AppCompatActivity implements OnClickListener, OnD
             entrytext.setEnabled(false);
         }
         if (authenticated) {
+            save_changed_entrytext();//Gem teksten, hvis den er blevet ændret
             int oldSelectedYear = selectedYear;
             selectedDayOfMonth = date.getDay();
             selectedMonth = date.getMonth();
@@ -242,7 +243,6 @@ public class TodoDiary extends AppCompatActivity implements OnClickListener, OnD
             selectedDayOfYear = tmpSelectedDay.get(Calendar.DAY_OF_YEAR);
             //Når en ny dato er valgt
             entrytext.setEnabled(true);
-            save_changed_entrytext();//Gem teksten, hvis den er blevet ændret
             if (oldSelectedYear != selectedYear) {
                 //Har der været årsskift i Datepicker?
                 if (current_db_readonly != 0) {
@@ -1160,7 +1160,9 @@ private void deletelocalfiles() {
                 changes = true;
                 //Har dette årstal været ændret før? Ellers marker som ugemt
                 boolean changed_before = parseChangedYears();
-                if (!changed_before) changed_years.add(selectedYear);
+                if (!changed_before) {
+                    changed_years.add(selectedYear);
+                }
                 ButtonTexts();
                 File file_read = new File(filePath, db_name_full);
                 File file_write = new File(filePath, "_"+db_name_full);
