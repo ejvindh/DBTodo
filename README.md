@@ -36,3 +36,8 @@ v1.2: Autumn 2017
 - Now works with new post SDK23 permissions.
 - Introduced ProcessDialog during save/load.
 - And several other minor fixes.
+
+v1.3: Autumn 2018
+- Due to Dropbox' decision of not supporting ecryptfs-encrypted drives I've written a Dropbox-detached version of the app. It can be found here:
+https://github.com/ejvindh/AndTodo
+I will probably not update the Dropbox version anymore.
